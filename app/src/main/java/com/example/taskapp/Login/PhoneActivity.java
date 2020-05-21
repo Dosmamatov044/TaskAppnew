@@ -20,6 +20,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.taskapp.MainActivity;
 import com.example.taskapp.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -37,7 +38,7 @@ import java.util.concurrent.TimeUnit;
 
 public class PhoneActivity extends AppCompatActivity {
 
-
+LottieAnimationView lottieAnimationView;
     private EditText editNumber;
     private EditText sms;
     private String id;
@@ -54,7 +55,7 @@ public class PhoneActivity extends AppCompatActivity {
         sms = findViewById(R.id.smsCode);
         onSms = findViewById(R.id.onSmsClick);
         editNumber = findViewById(R.id.lolloo);
-
+   lottieAnimationView=findViewById(R.id.lotiemyy);
         button();
 
 
@@ -126,12 +127,16 @@ public class PhoneActivity extends AppCompatActivity {
         if (number.isEmpty()){
             editNumber.setError("Номер не введен");
             editNumber.requestFocus();
-            return;
+
+            if (number!=null) {
+                lottieAnimationView.pauseAnimation();
+            }            return;
         }
 
         if (number.length() < 10){
             editNumber.setError("Неправильный номер телефона");
             editNumber.requestFocus();
+            lottieAnimationView.playAnimation();
             return;
         }
 

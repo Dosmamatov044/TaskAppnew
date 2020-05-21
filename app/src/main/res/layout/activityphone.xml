@@ -26,13 +26,15 @@
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:visibility="gone"
+
+
         android:hint="Введите свой код"
 
-    android:background="#673AB7"
 
 
 
-        android:layout_centerInParent="true"
+         android:layout_marginTop="200dp"
+        android:layout_centerInParent="false"
         android:inputType="phone"
         android:layout_height="40dp"
         />
@@ -42,7 +44,7 @@
         android:layout_below="@id/smsCode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:layout_marginTop="444dp"
         android:text="Продолжить"
         android:visibility="gone"
         android:onClick="onCodeClic"
@@ -52,11 +54,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/lolloo"
-        android:background="@drawable/android_studio"
+
         android:text="Продолжить"
         android:onClick="onClick"
         />
 
+
+    <com.airbnb.lottie.LottieAnimationView
+   android:id="@+id/lotiemyy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"
+    app:lottie_rawRes="@raw/nnon"/>
 
 
 </RelativeLayout>

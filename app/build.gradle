@@ -4,7 +4,6 @@ apply plugin: 'com.google.gms.google-services'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
-
     defaultConfig {
         applicationId "com.example.taskapp"
         minSdkVersion 17
@@ -45,4 +44,6 @@ dependencies {
     annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    compile 'com.github.pinball83:masked-edittext:1.0.4'
 }

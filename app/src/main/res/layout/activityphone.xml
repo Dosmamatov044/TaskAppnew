@@ -8,16 +8,20 @@
     android:layout_height="match_parent"
     tools:context=".Login.PhoneActivity">
 
-    <EditText
-       android:id="@+id/lolloo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
 
-        android:hint=""
+    <com.github.pinball83.maskededittext.MaskedEditText
+        android:id="@+id/lolloo"
         android:inputType="phone"
+        android:padding="15dp"
+        android:gravity="center"
 
-        />
-
+        app:mask="+996 (***) *** ***"
+        app:notMaskedSymbol="*"
+        android:hint="enter number: 7XX XXX XXX"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
 
 
 
@@ -59,7 +63,6 @@
         android:onClick="onClick"
         />
 
-
     <com.airbnb.lottie.LottieAnimationView
    android:id="@+id/lotiemyy"
     android:layout_width="match_parent"
@@ -67,6 +70,11 @@
     app:lottie_autoPlay="true"
     app:lottie_loop="true"
     app:lottie_rawRes="@raw/nnon"/>
+
+
+
+
+
 
 
 </RelativeLayout>

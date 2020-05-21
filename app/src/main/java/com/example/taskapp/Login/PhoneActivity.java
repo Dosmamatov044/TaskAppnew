@@ -56,7 +56,7 @@ LottieAnimationView lottieAnimationView;
         onSms = findViewById(R.id.onSmsClick);
         editNumber = findViewById(R.id.lolloo);
    lottieAnimationView=findViewById(R.id.lotiemyy);
-        button();
+
 
 
 
@@ -170,41 +170,13 @@ LottieAnimationView lottieAnimationView;
         imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 
-    public  void button(){
-        editNumber.setText("+996");
-        editNumber.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                try {
 
 
-                    if(s.length()<=4){
 
-                        editNumber.setText("+996");
-                        editNumber.setSelection(editNumber.getText().length());
-                    }
-
-                }catch (Exception e){
-
-                }
-            }
-        });
+        }
 
 
-    }
 
-
-}
 
 
 

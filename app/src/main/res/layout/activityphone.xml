@@ -28,7 +28,7 @@
         android:visibility="gone"
         android:hint="Введите свой код"
 
-
+    android:background="@drawable/nnnn"
         android:layout_centerInParent="true"
         android:inputType="phone"
         android:layout_height="wrap_content"

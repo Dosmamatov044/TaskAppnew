@@ -29,9 +29,12 @@
         android:hint="Введите свой код"
 
     android:background="#673AB7"
+
+
+
         android:layout_centerInParent="true"
         android:inputType="phone"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         />
 
     <Button
